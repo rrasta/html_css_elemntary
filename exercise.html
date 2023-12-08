@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komponent</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 2px;
+            max-width: 1200px; /* dostosuj do potrzeb */
+            margin: auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .avatar {
+            width: 40px; /* dostosuj do potrzeb */
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">InsightTimer</div>
+    <div class="avatar">
+        <!-- Załóżmy, że "avatar.jpg" to twoje zdjęcie profilowe -->
+        <img src="logo"  alt="Kocha">
+    </div>
+</div>
+
+</body>
+</html>
