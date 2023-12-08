@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Component</title>
+    <style>
+        .notification-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fff; /* Tło komponentu */
+            border-radius: 10px; /* Zaokrąglenie krawędzi */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lekki cień dla głębi */
+            max-width: 300px; /* Maksymalna szerokość komponentu */
+            margin: 20px; /* Odstęp od krawędzi */
+        }
+
+        .notification-bar .title {
+            font-size: 24px; /* Wielkość czcionki dla tytułu */
+            font-weight: bold; /* Pogrubienie czcionki */
+            color: #333; /* Kolor czcionki */
+        }
+
+        .notification-bar .icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .notification-bar .icon {
+            position: relative;
+            margin-left: 20px; /* Odstęp pomiędzy ikonami */
+        }
+
+        .notification-bar .icon .badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 18px; /* Wielkość badge */
+            height: 18px;
+            background-color: red; /* Kolor tła badge */
+            color: white; /* Kolor czcionki badge */
+            border-radius: 50%; /* Zaokrąglenie badge */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px; /* Wielkość czcionki badge */
+        }
+
+        .notification-bar .icon img {
+            width: 24px; /* Wielkość ikon */
+            height: 24px;
+        }
+    </style>
 </head>
 <body>
+
+<div class="notification-bar">
+    <div class="title">Circles</div>
+    <div class="icons">
+        <div class="icon">
+
+            <img src="bell.png" alt="Notifications">
+            <div class="badge">69</div>
+        </div>
+        <div class="icon">
+
+            <img src="plus.png" alt="Add">
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
