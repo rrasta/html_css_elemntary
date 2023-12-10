@@ -1,10 +1,51 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar Component</title>
+    <style>
+        .search-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f0f0f0; /* Kolor tła paska */
+            border-radius: 30px; /* Zaokrąglenie paska */
+            max-width: 400px; /* Maksymalna szerokość paska */
+            margin: 20px; /* Odstęp od krawędzi */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień dla głębi */
+        }
+
+        .search-bar input {
+            border: none;
+            background-color: transparent; /* Przezroczyste tło inputu */
+            margin-left: 10px; /* Odstęp od ikony lupy */
+            font-size: 16px; /* Wielkość czcionki */
+            width: 100%; /* Szerokość inputu */
+        }
+
+        .search-bar input::placeholder {
+            color: #a0a0a0; /* Kolor placeholdera */
+        }
+
+        .search-bar input:focus {
+            outline: none; /* Usunięcie focus outline */
+        }
+
+        .search-icon {
+            /* Załóżmy, że "search-icon.png" to ikona lupy */
+            background: url('search-icon.png') no-repeat center center;
+            background-size: contain; /* Dostosowanie rozmiaru ikony do kontenera */
+            width: 20px; /* Wielkość ikony */
+            height: 20px;
+        }
+    </style>
 </head>
 <body>
+
+<div class="search-bar">
+    <div class="search-icon"></div>
+    <input type="text" placeholder="Search Friends & Public Circles">
+</div>
 
 </body>
 </html>
